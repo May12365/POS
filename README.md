@@ -95,7 +95,7 @@
 ---
 
 ### Sell Report
-![Dashboard](gif/seles_report.gif)
+![Dashboard](gif/sales_report.gif)
 
 ---
 ### Logout
