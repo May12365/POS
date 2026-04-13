@@ -1,6 +1,8 @@
 # 🛒 POS System (Learnventory Hub)
-
-ระบบ Point of Sale (POS) สำหรับจัดการสินค้า การขาย และสต็อกสินค้า พัฒนาด้วย PHP + MySQL เหมาะสำหรับร้านค้าขนาดเล็กถึงกลาง
+### ระบบ Point of Sale (POS) สำหรับจัดการสินค้า การขาย และสต็อกสินค้า พัฒนาด้วย PHP + MySQL เหมาะสำหรับร้านค้าขนาดเล็กถึงกลาง
+![GitHub repo size](https://img.shields.io/github/repo-size/May12365/TypingTestGame)
+![GitHub stars](https://img.shields.io/github/stars/May12365/TypingTestGame?style=social)
+![GitHub forks](https://img.shields.io/github/forks/May12365/TypingTestGame?style=social)
 
 ---
 
@@ -93,7 +95,7 @@
 ---
 
 ### Sell Report
-![Dashboard](gif/sell_report.gif)
+![Dashboard](gif/seles_report.gif)
 
 ---
 ### Logout
