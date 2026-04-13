@@ -62,8 +62,42 @@
 ---
 
 ## 📸 Screenshots
+### Registration
+![Dashboard](gif/register.gif)
 
-> (แนะนำ: ใส่รูปหน้าจอระบบที่นี่)
+---
+
+### Login
+![Dashboard](gif/login.gif)
+
+---
+
+### Sell
+![Dashboard](gif/sell.gif)
+
+---
+
+### Manage Products
+![Dashboard](gif/manage_products.gif)
+
+---
+
+### Edit Products
+![Dashboard](gif/edit_products.gif)
+
+---
+
+### Manage Categories
+![Dashboard](gif/manage_categories.gif)
+
+---
+
+### Sell Report
+![Dashboard](gif/sell_report.gif)
+
+---
+### Logout
+![Dashboard](gif/logout.gif)
 
 ---
 
