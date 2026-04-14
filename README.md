@@ -1,20 +1,20 @@
 # 🛒 POS System (Learnventory Hub)
-### ระบบ Point of Sale (POS) สำหรับจัดการสินค้า การขาย และสต็อกสินค้า พัฒนาด้วย PHP + MySQL เหมาะสำหรับร้านค้าขนาดเล็กถึงกลาง
+
+### A Point of Sale (POS) system for managing products, sales, and inventory. Built with PHP + MySQL, suitable for small to medium-sized businesses.
 ![GitHub repo size](https://img.shields.io/github/repo-size/May12365/TypingTestGame)
 ![GitHub stars](https://img.shields.io/github/stars/May12365/TypingTestGame?style=social)
-![GitHub forks](https://img.shields.io/github/forks/May12365/TypingTestGame?style=social)
 
 ---
 
 ## 📌 Overview
 
-โปรเจคนี้เป็นระบบ POS ที่พัฒนาขึ้นเพื่อ:
+This project is a POS system designed to:
 
-* จัดการสินค้า (CRUD)
-* จัดการหมวดหมู่สินค้า
-* บันทึกการขายสินค้า
-* แสดงรายงานการขาย
-* รองรับการใช้งานแบบ Role-based (Admin / Staff)
+- Manage products (CRUD operations)
+- Manage product categories
+- Record sales transactions
+- Generate sales reports
+- Support role-based access control (Admin / Staff)
 
 ---
 
@@ -22,189 +22,185 @@
 
 ### 👤 Authentication & Authorization
 
-* Login / Logout
-* Session-based authentication
-* แยกสิทธิ์การใช้งาน:
-
-  * **Admin** → จัดการสินค้า / หมวดหมู่ / รายงาน/ ขายสินค้า
-  * **Staff** → ขายสินค้า
+- Login / Logout functionality  
+- Session-based authentication  
+- Role-based access control:
+  - **Admin** → Manage products, categories, sales, and reports  
+  - **Staff** → Process sales transactions only  
 
 ---
 
 ### 📦 Product Management (CRUD)
 
-* เพิ่มสินค้า
-* แก้ไขสินค้า
-* ลบสินค้า
-* จัดหมวดหมู่สินค้า
-* แสดงรายการสินค้าแบบตาราง
+- Add new products  
+- Edit existing products  
+- Delete products  
+- Assign products to categories  
+- Display products in a table format  
 
 ---
 
 ### 📂 Category Management
 
-* เพิ่ม / แก้ไข / ลบหมวดหมู่
-* เชื่อมโยงสินค้าเข้ากับหมวดหมู่
+- Create, update, and delete categories  
+- Associate products with categories  
 
 ---
 
 ### 🛒 Sales System
 
-* เลือกสินค้าเพื่อขาย
-* คำนวณราคาอัตโนมัติ
-* บันทึกข้อมูลการขายลงฐานข้อมูล
+- Select products for purchase  
+- Automatic price calculation  
+- Store sales transactions in the database  
 
 ---
 
 ### 📊 Sales Report
 
-* แสดงรายงานยอดขาย
-* แสดงข้อมูลต่อใบเสร็จ
+- Display sales summaries  
+- View transaction details per receipt  
 
 ---
 
 ## 📸 Screenshots
+
 ### Registration
-![Dashboard](gif/register.gif)
+![Registration](gif/register.gif)
 
 ---
 
 ### Login
-![Dashboard](gif/login.gif)
+![Login](gif/login.gif)
 
 ---
 
 ### Sell
-![Dashboard](gif/sell.gif)
+![Sell](gif/sell.gif)
 
 ---
 
 ### Manage Products
-![Dashboard](gif/manage_products.gif)
+![Manage Products](gif/manage_products.gif)
 
 ---
 
 ### Edit Products
-![Dashboard](gif/edit_products.gif)
+![Edit Products](gif/edit_products.gif)
 
 ---
 
 ### Manage Categories
-![Dashboard](gif/manage_categories.gif)
+![Manage Categories](gif/manage_categories.gif)
 
 ---
 
-### Sell Report
-![Dashboard](gif/sales_report.gif)
+### Sales Report
+![Sales Report](gif/sales_report.gif)
 
 ---
+
 ### Logout
-![Dashboard](gif/logout.gif)
+![Logout](gif/logout.gif)
 
 ---
 
 ## 🧑‍💻 Tech Stack
 
 | Layer    | Technology       |
-| -------- | ---------------- |
+|----------|------------------|
 | Frontend | HTML, CSS        |
 | Backend  | PHP (Procedural) |
 | Database | MySQL / MariaDB  |
 | Server   | Apache (XAMPP)   |
 
 ---
+
 ## 📦 Project Structure
 
 ```bash
 POS/
 │
-├── db.php                 # ไฟล์เชื่อมต่อฐานข้อมูล (MySQL)
-├── index.php              # หน้าแรกหลัง login (Dashboard)
-├── login.php              # หน้าเข้าสู่ระบบ
-├── logout.php             # ออกจากระบบ (destroy session)
+├── db.php                 # Database connection (MySQL)
+├── index.php              # Dashboard (after login)
+├── login.php              # Login page
+├── logout.php             # Logout (destroy session)
 │
-├── manage_products.php    # จัดการสินค้า (แสดง / เพิ่ม / ลบ)
-├── edit_product.php       # แก้ไขข้อมูลสินค้า
+├── manage_products.php    # Product management (list / add / delete)
+├── edit_product.php       # Edit product details
 │
-├── manage_categories.php  # จัดการหมวดหมู่สินค้า
+├── manage_categories.php  # Category management
 │
-├── sell.php               # หน้าขายสินค้า (POS)
-├── sales_report.php       # รายงานยอดขาย
+├── sell.php               # POS interface (sales page)
+├── sales_report.php       # Sales reporting
 │
-├── css/                   # (ถ้ามี) ไฟล์ CSS แยก
+├── css/
 │   └── style.css
 │
-├── assets/                # รูปภาพ / icon / ไฟล์ static
+├── assets/                # Images, icons, static files
 │
-├── database/              # ไฟล์ SQL
+├── database/
 │   └── pos_db.sql
 │
-└── README.md              # เอกสารโปรเจค
-```
+└── README.md
 
----
+## 🧠 Structure Explanation
 
-### 🧠 อธิบายโครงสร้าง
+- **db.php**  
+  Handles database connection (separated for reusability)
 
-* **db.php**
-  ใช้สำหรับเชื่อมต่อฐานข้อมูล (ควรแยกเพื่อ reuse)
+- **Authentication (login/logout)**  
+  Uses PHP sessions for user management  
 
-* **auth (login/logout)**
-  ใช้ session ในการจัดการผู้ใช้งาน
+- **manage_products.php / edit_product.php**  
+  Handles product CRUD operations  
 
-* **manage_products.php / edit_product.php**
-  จัดการ CRUD ของสินค้า
+- **manage_categories.php**  
+  Manages categories and their relationship with products  
 
-* **manage_categories.php**
-  จัดการหมวดหมู่ (สัมพันธ์กับ Product)
+- **sell.php**  
+  Core POS functionality for processing sales  
 
-* **sell.php**
-  เป็น core ของระบบ POS สำหรับขายสินค้า
+- **sales_report.php**  
+  Displays sales data in a report format  
 
-* **sales_report.php**
-  แสดงข้อมูลการขายในรูปแบบรายงาน
-
-* **database/**
-  เก็บไฟล์ SQL สำหรับ import
+- **database/**  
+  Contains SQL files for database setup  
 
 ---
 
 ## 🗄️ Database Structure
 
-### Tables หลัก:
+### Main Tables:
 
-* `Product` → เก็บข้อมูลสินค้า
-* `Categories` → หมวดหมู่สินค้า
-* `Users` → ผู้ใช้งานระบบ
-* `Sales` → ข้อมูลการขาย
+- `Product` → Stores product data  
+- `Categories` → Stores category data  
+- `Users` → Stores user accounts  
+- `Sales` → Stores sales transactions  
 
 ### Relationship:
 
-* Product → Categories (Many-to-One)
+- Product → Categories (Many-to-One)
 
 ---
 
 ## ⚙️ Installation
 
-### 1. Clone Project
+### 1. Clone the Project
 
 ```bash
 git clone https://github.com/your-username/pos-system.git
-```
 
 ---
 
 ### 2. Setup Database
-
-* เปิด phpMyAdmin
-* สร้าง database ใหม่ เช่น `pos_db`
-* Import ไฟล์ `.sql`
-
+- Open phpMyAdmin
+- Create a new database (e.g., `pos_db`)
+- Import the `.sql`
 ---
 
 ### 3. Config Database
 
-แก้ไขไฟล์:
+Edit:
 
 ```php
 db.php
@@ -218,8 +214,8 @@ $conn = new mysqli("localhost", "root", "", "pos_db");
 
 ### 4. Run Project
 
-* เปิด XAMPP (Apache + MySQL)
-* เข้า:
+- Start XAMPP (Apache + MySQL)
+- Open in browser:
 
 ```
 http://localhost/POS/
@@ -236,14 +232,6 @@ http://localhost/POS/
 
 ---
 
-## 🔮 Future Improvements
-* ✅ ใช้ Prepared Statement (Security)
-* ✅ เพิ่มระบบ Upload รูปสินค้า
-* ✅ ทำ UI ด้วย Bootstrap / Tailwind
-* ✅ แยก MVC Structure
-* ✅ เพิ่ม Dashboard (Chart / Analytics)
-
----
 
 ## 📜 License
 
