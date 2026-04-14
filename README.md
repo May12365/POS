@@ -143,32 +143,31 @@ POS/
 │
 └── README.md
 
+
+---
+
+
 ## 🧠 Structure Explanation
 
 - **db.php**  
   Handles database connection (separated for reusability)
 
 - **Authentication (login/logout)**  
-  Uses PHP sessions for user management  
+  Uses PHP sessions for user management
 
 - **manage_products.php / edit_product.php**  
-  Handles product CRUD operations  
+  Handles product CRUD operations
 
 - **manage_categories.php**  
-  Manages categories and their relationship with products  
+  Manages categories and their relationship with products
 
 - **sell.php**  
-  Core POS functionality for processing sales  
+  Core POS functionality for processing sales
 
 - **sales_report.php**  
-  Displays sales data in a report format  
+  Displays sales data in a report format
 
-- **database/**  
-  Contains SQL files for database setup  
-
----
-
-## 🗄️ Database Structure
+## Database Structure
 
 ### Main Tables:
 
