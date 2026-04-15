@@ -1,8 +1,8 @@
 # 🛒 POS System (Learnventory Hub)
 
 ### A Point of Sale (POS) system for managing products, sales, and inventory. Built with PHP + MySQL, suitable for small to medium-sized businesses.
-![GitHub repo size](https://img.shields.io/github/repo-size/May12365/TypingTestGame)
-![GitHub stars](https://img.shields.io/github/stars/May12365/TypingTestGame?style=social)
+![GitHub repo size](https://img.shields.io/github/repo-size/May12365/POS)
+![GitHub stars](https://img.shields.io/github/stars/May12365/POS?style=social)
 
 ---
 
